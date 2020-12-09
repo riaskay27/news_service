@@ -1,4 +1,4 @@
-package ua.com.newsAPEPS.exception;
+package ua.com.terminals.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
-public class NewsErrorHandler {
+public class TerminalsErrorHandler {
 
     @ExceptionHandler
-    ResponseEntity<NewsErrorResponce> handlerException(NewsNotFoundException e){
+    ResponseEntity<TerminalsErrorResponce> handlerException(TerminalsNotFoundException e){
 
-        NewsErrorResponce error= NewsErrorResponce.builder()
+        TerminalsErrorResponce error= TerminalsErrorResponce.builder()
                 .message(e.getMessage())
                 .status(HttpStatus.NOT_FOUND.value())
                 .timestamp(System.currentTimeMillis())

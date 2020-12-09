@@ -1,7 +1,7 @@
-package ua.com.newsAPEPS.service;
+package ua.com.terminals.service;
 import org.springframework.stereotype.Service;
-import ua.com.newsAPEPS.entity.User;
-import ua.com.newsAPEPS.repo.UserRepo;
+import ua.com.terminals.entity.User;
+import ua.com.terminals.repo.UserRepo;
 
 @Service
 public class UserService {

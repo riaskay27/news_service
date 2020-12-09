@@ -1,4 +1,4 @@
-package ua.com.newsAPEPS.entity;
+package ua.com.terminals.entity;
 
 import lombok.*;
 

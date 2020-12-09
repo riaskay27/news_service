@@ -1,11 +1,11 @@
-package ua.com.newsAPEPS.controller;
+package ua.com.terminals.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ua.com.newsAPEPS.entity.User;
-import ua.com.newsAPEPS.service.UserService;
+import ua.com.terminals.entity.User;
+import ua.com.terminals.service.UserService;
 
 @RestController
 @RequestMapping(value = "/app",
